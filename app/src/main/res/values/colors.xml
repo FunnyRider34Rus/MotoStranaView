@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ditto_140">#565CE3</color>
+    <color name="ditto_80">#8E92EC</color>
+    <color name="ditto_20">#C7C9F6</color>
+    <color name="krabby_140">#EF6F6C</color>
+    <color name="krabby_80">#F49F9D</color>
+    <color name="krabby_20">#FACFCE</color>
+    <color name="buldasaur_140">#56E39F</color>
+    <color name="buldasaur_80">#8EECBF</color>
+    <color name="buldasaur_20">#C7F6DF</color>
+    <color name="black">#FF212529</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="golbat_120">#343A40</color>
+    <color name="golbat_100">#495057</color>
+    <color name="golbat_80">#6C757D</color>
+    <color name="golbat_60">#ADB5DB</color>
+    <color name="golbat_40">#CED4DA</color>
+    <color name="golbat_20">#DEE2E6</color>
+    <color name="golbat_10">#E9ECEF</color>
+    <color name="golbat_5">#F8F9FA</color>
+</resources>

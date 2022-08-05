@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_welcome">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.elpablo.motostrana.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_menu_home"
+        tools:layout="@layout/fragment_dashboard" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.elpablo.motostrana.ui.chat.ChatFragment"
+        android:label="@string/nav_menu_messages"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.elpablo.motostrana.ui.settings.SettingsFragment"
+        android:label="@string/nav_menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/navigation_welcome"
+        android:name="com.elpablo.motostrana.ui.registration.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welocme">
+        <action
+            android:id="@+id/action_navigation_welcome_to_navigation_input_phone"
+            app:destination="@id/navigation_input_phone" />
+        <action
+            android:id="@+id/action_navigation_welcome_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_input_phone"
+        android:name="com.elpablo.motostrana.ui.registration.PhoneInputFragment"
+        android:label="PhoneInputFragment"
+        tools:layout="@layout/fragment_phone_registration">
+        <action
+            android:id="@+id/action_navigation_input_phone_to_navigation_input_code"
+            app:destination="@id/navigation_input_code" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_input_code"
+        android:name="com.elpablo.motostrana.ui.registration.PhoneCodeFragment"
+        android:label="PhoneCodeFragment"
+        tools:layout="@layout/fragment_phone_code">
+        <action
+            android:id="@+id/action_navigation_input_code_to_inputUserDataFragment"
+            app:destination="@id/navigation_user_data_input" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_user_data_input"
+        android:name="com.elpablo.motostrana.ui.registration.InputUserDataFragment"
+        android:label="InputUserDataFragment"
+        tools:layout="@layout/fragment_input_user_data"/>
+    <fragment
+        android:id="@+id/navigation_settings_profile"
+        android:name="com.elpablo.motostrana.ui.settings.ProfileFragment"
+        android:label="ProfilFragment"
+        tools:layout="@layout/fragment_settings_user_profile"/>
+</navigation>

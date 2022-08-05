@@ -1,0 +1,73 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/white"
+    tools:context="ui.registration.PhoneCodeFragment">
+
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large2x_indent"
+        android:layout_marginStart="@dimen/header_text"
+        android:src="@drawable/ic_button_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_code"
+        android:layout_marginTop="@dimen/header_top_margin"
+        android:layout_marginStart="@dimen/header_text"
+        android:layout_marginEnd="@dimen/header_text"
+        style="@style/TextAppearance.Headline"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_back"/>
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_indent"
+        style="@style/TextAppearance.Body1"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:text="@string/send_code_to_number"
+        app:layout_constraintStart_toStartOf="@id/header_text"
+        app:layout_constraintEnd_toEndOf="@id/header_text"
+        app:layout_constraintTop_toBottomOf="@id/header_text"/>
+
+    <EditText
+        android:id="@+id/enter_code_input"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_input_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/large2x_indent"
+        android:background="@drawable/chat_edit_text_input_background"
+        android:hint="@string/enter_code"
+        android:importantForAutofill="no"
+        android:maxLength="6"
+        android:inputType="number"
+        android:gravity="center"
+        android:digits="0123456789"
+        style="@style/TextAppearance.Body1"
+        app:layout_constraintStart_toStartOf="@id/header_text"
+        app:layout_constraintEnd_toEndOf="@id/header_text"
+        app:layout_constraintTop_toBottomOf="@id/text_description"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/enter_code_button"
+        android:layout_width="0dp"
+        style="@style/Button"
+        android:layout_marginTop="@dimen/header_top_margin"
+        app:layout_constraintStart_toStartOf="@id/header_text"
+        app:layout_constraintEnd_toEndOf="@id/header_text"
+        app:layout_constraintTop_toBottomOf="@id/enter_code_input"
+        android:text="@string/button_next"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

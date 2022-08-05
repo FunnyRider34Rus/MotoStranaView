@@ -1,0 +1,62 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MotoStrana" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/golbat_60</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/golbat_80</item>
+        <item name="colorSecondaryVariant">@color/golbat_5</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSurface">@color/golbat_100</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.MotoStrana">
+        <item name="android:windowBackground">@drawable/ic_motostrana</item>
+        <item name="windowSplashScreenBackground">@drawable/ic_motostrana</item>
+
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">16dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/large_indent</item>
+    </style>
+
+    <style name="TextAppearance.Headline" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="TextAppearance.Body0" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="TextAppearance.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.Body3" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>
