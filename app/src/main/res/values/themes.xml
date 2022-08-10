@@ -18,8 +18,6 @@
 
     <style name="Theme.Splash" parent="Theme.MotoStrana">
         <item name="android:windowBackground">@drawable/ic_motostrana</item>
-        <item name="windowSplashScreenBackground">@drawable/ic_motostrana</item>
-
     </style>
 
     <style name="Button" parent="Widget.MaterialComponents.Button">
@@ -33,10 +31,12 @@
         <item name="android:elevation">0dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
+        <item name="android:layout_marginStart">@dimen/standard_margin</item>
+        <item name="android:layout_marginEnd">@dimen/standard_margin</item>
     </style>
 
     <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
-        <item name="cornerSize">@dimen/large_indent</item>
+        <item name="cornerSize">16dp</item>
     </style>
 
     <style name="TextAppearance.Headline" parent="TextAppearance.MaterialComponents.Headline1">

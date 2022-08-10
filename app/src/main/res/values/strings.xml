@@ -1,51 +1,18 @@
 <resources>
     <string name="app_name">МотоСтрана</string>
-    <string name="google_signin_button">Войти по номеру телефона</string>
-    <string name="nav_menu_home">Лента</string>
-    <string name="nav_menu_messages">Чаты</string>
-    <string name="nav_menu_settings">Настройки</string>
-    <string name="home_description_media">медиа события</string>
-    <string name="event_title">Заголовок события</string>
-    <string name="event_date">Дата</string>
-    <string name="event_text">Текст события</string>
-    <string name="home_tab_news">Новости</string>
-    <string name="home_tab_events">Мероприятия</string>
-    <string name="chat_tab_city">Город</string>
-    <string name="chat_tab_channels">Каналы</string>
-    <string name="input_message">Сообщение…</string>
-    <string name="settings_logout_button">Выйти</string>
-
-    <!--Ресурсы для запроса геолокации-->
-    <string name="enable_now">предоставить доступ</string>
-    <string name="enable_gps">доступ к геолокации</string>
-    <string name="required_for_this_app">для полного функционирования приложения необходим доступ к Вашей геолокации</string>
-
-    <string name="user_logo_image">User Logo Image</string>
-    <string name="chat_tab_region">Область</string>
-    <string name="user_logo">user_logo</string>
-    <string name="event_image">event_image</string>
-    <string name="location_permission_not_granted">доступ к геолокации не предоставлен</string>
-    <string name="add_image">добавить изображение</string>
-    <string name="send_message">отправить сообщение</string>
-    <string name="welcome_text">Добро пожаловать в приложение для совместных прохватов и путешествий!</string>
-    <string name="start_phone_number">+7</string>
-    <string name="enter_code">Введите код</string>
-    <string name="send_code_to_number">Мы отправили его на номер</string>
-    <string name="button_next">Далее</string>
-    <string name="input_phone_number">Введите Ваш номер телефона</string>
-    <string name="back">Назад</string>
-    <string name="registration_user_info_header">Введите Ваше имя и фамилию</string>
-    <string name="user_name">Имя</string>
-    <string name="user_family">Фамилия</string>
-    <string name="user_nickname">Псевдоним</string>
-    <string name="title_profile">Профиль</string>
-    <string name="profil">Профиль</string>
-    <string name="notification">Оповещения</string>
-    <string name="search">search</string>
-    <string name="logout">logout</string>
-    <string name="privacy">Конфиденциальность</string>
-    <string name="button_back">вернуться назад</string>
-    <string name="button_edit">сохранить изминения</string>
-    <string name="settings_user_logo">фотография пользователя</string>
+    <string name="phone_sign_in_button">Войти по номеру телефона</string>
+    <string name="welcome_text">Добро пожаловать в приложение для совместных мотопутешествий!</string>
+    <string name="welcome_screen_main_image_description">Заставка</string>
+    <string name="bottom_menu_events">События</string>
+    <string name="bottom_menu_messages">Сообщения</string>
+    <string name="bottom_menu_settings">Настройки</string>
+    <string name="fragment_phone_input">Введите номер телефона</string>
+    <string name="country_code">+7</string>
+    <string name="fragment_phone_input_number_hint">номер телефона</string>
+    <string name="fragment_phone_input_button">Далее</string>
+    <string name="button_back_description">Кнопка назад</string>
+    <string name="fragment_phone_code_header_text">Введите код</string>
+    <string name="fragment_phone_code_description_text">Мы отправили код на номер</string>
+    <string name="fragment_phone_code_input_hint">введите код</string>
 
 </resources>

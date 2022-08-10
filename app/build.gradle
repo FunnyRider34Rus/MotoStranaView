@@ -3,8 +3,6 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
-    id 'dagger.hilt.android.plugin'
-    id 'kotlin-kapt'
     id 'kotlin-parcelize'
 }
 
@@ -54,16 +52,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
-    implementation 'com.google.firebase:firebase-storage-ktx'
     implementation 'com.google.android.gms:play-services-auth:20.2.0'
-    implementation 'com.google.firebase:firebase-messaging-ktx:23.0.6'
     implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.12'
     //Fused Location API
     implementation 'com.google.android.gms:play-services-location:20.0.0'
-    // Firebase UI Library
-    def firebase_ui = "8.0.1"
-    implementation "com.firebaseui:firebase-ui-auth:${firebase_ui}"
-    implementation "com.firebaseui:firebase-ui-database:${firebase_ui}"
     //ViewModel, LiveData
     def lifecycle = "2.5.1"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycle}"
@@ -78,10 +70,6 @@ dependencies {
     def coroutines = '1.6.4'
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutines}"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutines}"
-    //Hilt
-    implementation "com.google.dagger:hilt-android:${hilt_version}"
-    kapt "com.google.dagger:hilt-compiler:${hilt_version}"
-    implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0'
     //Test
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

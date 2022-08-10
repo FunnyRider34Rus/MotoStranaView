@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="event_height_image">244dp</dimen>
-    <dimen name="bottom_margin">48dp</dimen>
-    <dimen name="large2x_indent">32dp</dimen>
-    <dimen name="icon_size">24dp</dimen>
-    <dimen name="header_text">24dp</dimen>
-    <dimen name="large_indent">16dp</dimen>
-    <dimen name="medium_indent">12dp</dimen>
-    <dimen name="small_indent">8dp</dimen>
-    <dimen name="s_indent">4dp</dimen>
-    <dimen name="user_logo_size_settings_in_profil">118dp</dimen>
-    <dimen name="max_height_image_view_on_chat">180dp</dimen>
-    <dimen name="max_width_image_view_on_chat">132dp</dimen>
-    <dimen name="chat_logo_size">44dp</dimen>
-    <dimen name="header_top_margin">40dp</dimen>
-    <dimen name="text_input_height">56dp</dimen>
-    <dimen name="settings_margintop_regular">28dp</dimen>
+
+    <dimen name="standard_margin">24dp</dimen>
+    <dimen name="welcome_image_height">340dp</dimen>
+    <dimen name="big_margin">32dp</dimen>
+    <dimen name="fragment_phone_input_country_code_padding">20dp</dimen>
+    <dimen name="fragment_phone_input_button_top_margin">76dp</dimen>
+    <dimen name="small_margin">16dp</dimen>
+    <dimen name="small_input_text_margin">8dp</dimen>
 </resources>

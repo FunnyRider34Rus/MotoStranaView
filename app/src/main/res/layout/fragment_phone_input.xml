@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:background="@color/white"
-    tools:context="ui.registration.PhoneCodeFragment">
+    tools:context=".ui.registration.PhoneInputFragment">
 
     <ImageView
         android:id="@+id/button_back"
@@ -19,54 +20,54 @@
     <TextView
         android:id="@+id/header_text"
         style="@style/TextAppearance.Headline"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/standard_margin"
         android:layout_marginTop="@dimen/small_margin"
         android:layout_marginEnd="@dimen/standard_margin"
-        android:text="@string/fragment_phone_code_header_text"
+        android:text="@string/fragment_phone_input"
         android:textColor="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_back" />
 
     <TextView
-        android:id="@+id/text_description"
+        android:id="@+id/country_code"
         style="@style/TextAppearance.Body1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/fragment_phone_code_description_text"
-        android:textColor="?attr/colorPrimaryVariant"
-        app:layout_constraintEnd_toEndOf="@id/header_text"
+        android:layout_marginTop="@dimen/big_margin"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:padding="@dimen/fragment_phone_input_country_code_padding"
+        android:text="@string/country_code"
         app:layout_constraintStart_toStartOf="@id/header_text"
         app:layout_constraintTop_toBottomOf="@id/header_text" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_text_layout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/big_margin"
-        android:padding="@dimen/fragment_phone_input_country_code_padding"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/standard_margin"
         android:background="@drawable/edit_text_background"
         app:boxBackgroundMode="none"
         app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@id/country_code"
         app:layout_constraintEnd_toEndOf="@id/header_text"
-        app:layout_constraintStart_toStartOf="@id/header_text"
-        app:layout_constraintTop_toBottomOf="@id/text_description">
+        app:layout_constraintStart_toEndOf="@+id/country_code"
+        app:layout_constraintTop_toTopOf="@id/country_code">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_code"
+            android:id="@+id/edit_text_phone_number"
             style="Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:padding="@dimen/small_input_text_margin"
-            android:digits="0123456789"
-            android:hint="@string/fragment_phone_code_input_hint"
+            android:hint="@string/fragment_phone_input_number_hint"
             android:importantForAutofill="no"
-            android:inputType="number"
-            android:maxLength="6"
+            android:inputType="phone"
+            android:maxLength="10"
             android:imeOptions="actionNext"
             android:textAppearance="@style/TextAppearance.Body1"
             app:layout_constraintBottom_toBottomOf="@id/edit_text_layout"
@@ -76,7 +77,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/enter_code_button"
+        android:id="@+id/button_next"
         style="@style/Button"
         android:layout_width="0dp"
         android:layout_marginTop="@dimen/fragment_phone_input_button_top_margin"
